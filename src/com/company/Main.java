@@ -10,14 +10,14 @@ public class Main {
         int[] A = new int[]{1, 3, 3, 5, 12, 23, 45, 67, 89, 100};
         int steps = 0;
         int val = 67;
-        System.out.println("        Линейный поиск");
+        // O(n)
         LineSort(val, A, steps);
-        System.out.println("        Бинарный поиск");
+        // O(log n)
         BinarySort(val, A, steps);
-
     }
 
     private static void LineSort(int val, int[] A, int steps) {
+        System.out.println("        Линейный поиск");
         int n = A.length;
         int pos = -1;
         boolean resultOk = false;
@@ -36,6 +36,7 @@ public class Main {
 
     //           {1, 3, 3, 5, 12, 23, 45, 67, 89, 100};
     private static void BinarySort(int val, int[] A, int steps) {
+        System.out.println("        Бинарный поиск");
         int last = A.length - 1,
                 first = 0,
                 middle, i = 0;
