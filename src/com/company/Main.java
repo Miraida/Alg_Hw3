@@ -9,11 +9,11 @@ public class Main {
 
         int[] A = new int[]{1, 3, 3, 5, 12, 23, 45, 67, 89, 100};
         int steps = 0;
-        int val = 67;
+        int value = 67;
         // O(n)
-        LineSort(val, A, steps);
+        LineSort(value, A, steps);
         // O(log n)
-        BinarySort(val, A, steps);
+        BinarySort(value, A, steps);
     }
 
     private static void LineSort(int val, int[] A, int steps) {
